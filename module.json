@@ -1,10 +1,10 @@
 {
     "title": "fvtt unfckux",
     "description": "Just unfck my stuff back down.",
-    "url": "https://github.com/dotadd/fvtt_uxunfck",
-    "manifest": "https://raw.githubusercontent.com/dotadd/fvtt_uxunfck/main/module.json",
-    "download": "https://github.com/dotadd/fvtt_uxunfck/archive/refs/heads/main.zip",
-    "id": "fvtt_uxunfck",
+    "url": "https://github.com/dotadd/fvtt_unfckux",
+    "manifest": "https://raw.githubusercontent.com/dotadd/fvtt_unfckux/main/module.json",
+    "download": "https://github.com/dotadd/fvtt_unfckux/archive/refs/heads/main.zip",
+    "id": "fvtt_unfckux",
     "authors": [
         {
             "name": "dotadd"
