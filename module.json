@@ -11,14 +11,14 @@
         }
     ],
     "compatibility": {
-        "minimum": "14.360",
-        "verified": "14.360"
+        "minimum": "14",
+        "verified": "14"
     },
     "styles": [
         "styles/fix.css"
     ],
-    "scripts": [
-        "scripts/fix.js"
+    "esmodules": [
+        "esmodules/fix.js"
     ],
-    "version": "0.1"
+    "version": "0.2"
 }
