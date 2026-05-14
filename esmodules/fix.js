@@ -1,3 +1,39 @@
+const cssData = `
+.fa-spin {
+	animation-name: unset;
+	animation-delay: unset;
+	animation-direction: unset;
+	animation-duration: unset;
+	animation-iteration-count: unset;
+	animation-timing-function: unset;
+}
+
+#pause.paused {
+    animation: none;
+}
+
+#sidebar li:has([data-tab="cards"]){display:none;}
+#sidebar li:has([data-tab="tables"]){display:none;}
+
+#token-hud .status-effects {
+    --effect-size: 50px;
+}
+
+#chat-message .menu-container {display:none;}
+
+.theme-dark {
+    --color-cool-5-25: rgba(11, 10, 19, 1);
+    --color-cool-5-50: rgba(11, 10, 19, 1);
+    --color-cool-5-75: rgba(11, 10, 19, 1);
+    --color-cool-5-90: rgba(11, 10, 19, 1);
+    --color-level-error-bg: rgba(105, 0, 8, 1);
+    --color-level-info-bg: rgba(47, 80, 132, 1);
+    --color-level-success-bg: rgba(26, 107, 34, 1);
+    --color-level-warning-bg: rgba(214, 150, 0, 1);
+}
+`;
+
+
 async function fixGlobalSettings() {
     if (!game.user.isGM) {
         console.log("Not attempting to set up world settings, as you are not a GM.");
@@ -69,6 +105,10 @@ async function fixUserSettings() {
 
     if (game.modules.has("pf2e-toolbelt")) {
         await game.settings.set("pf2e-toolbelt","betterMovement.history", true);
+    }
+
+    if (game.modules.has("custom-css")) {
+        await game.settings.set("custom-css","userStylesheet", cssData);
     }
 }
 

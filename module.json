@@ -14,11 +14,8 @@
         "minimum": "14",
         "verified": "14"
     },
-    "styles": [
-        "styles/fix.css"
-    ],
     "esmodules": [
         "esmodules/fix.js"
     ],
-    "version": "0.3"
+    "version": "0.4"
 }
