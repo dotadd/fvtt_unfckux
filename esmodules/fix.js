@@ -1,5 +1,5 @@
 async function fixGlobalSettings() {
-    if (game.user.isGM) {
+    if (!game.user.isGM) {
         console.log("Not attempting to set up world settings, as you are not a GM.");
         return;
     }
